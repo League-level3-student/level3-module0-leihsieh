@@ -34,7 +34,7 @@ public class ConwaysGameOfLife extends JPanel implements ActionListener{
 
     public void launchGame() {
         //build the window and start the simulation
-        //setPreferredSize(new Dimension(WIDTH, HEIGHT));
+        setPreferredSize(new Dimension(WIDTH, HEIGHT));
         setLayout(new BorderLayout());
 
         window = new JFrame("Conway's Game Of Life");
@@ -50,7 +50,7 @@ public class ConwaysGameOfLife extends JPanel implements ActionListener{
         speedLabel = new JLabel("delay:");
         speedField = new JTextField(5);
         speedField.setText(Integer.toString(60));
-
+        
         inputPanel.add(startStopButton);
         inputPanel.add(speedLabel);
         inputPanel.add(speedField);
